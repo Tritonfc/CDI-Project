@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body {
+	font-family: 'Inter';
+	margin: 0;
+}
+
+.navigation {
+	background-color: #1e1e1e;
+	color: white;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	padding-top: 11px;
+	padding-bottom: 12px;
+	padding-left: 6.38vw;
+	padding-right: 6.38vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-link {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.link-container {
+	display: flex;
+	gap: 30px;
+}
+
+.hero {
+	padding-top: 65px;
+	padding-bottom: 63px;
+	background-color: #272727;
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+
+	padding-inline: 6.38vw;
+	gap: 65px;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	padding-block: 100px;
+	padding-inline: 6.38vw;
+}
+
+.form-button {
+	background: #ffd700;
+	border-radius: 10px;
+	width: 262px;
+	height: 60px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+	/* identical to box height */
+
+	color: #272727;
+}
+
+@media (max-width: 1200px) {
+	.hidden-in-mobile {
+		display: none;
+	}
+	.hero {
+		flex-wrap: wrap;
+	}
+}

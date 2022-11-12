@@ -1,94 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<title>Golden Ogbeka</title>
-		<style>
-			h1 {
-				background-color: deeppink;
-			}
-			h1 {
-				background-color: green;
-			}
-			ul  {
-				background-color: orange;
-				list-style-type: none;
-				width: 200px;
-				height: 100%;
-				position: fixed;
-				padding: 0;
-				margin: 0;
-				top: 0;
-				overflow: hidden;
-				
-			}
-			li {
-				float: left;
-			}
-			li a{
-				display: inline-block;
-				background-color: black;
-				padding:16px 16px;
-				text-align: center;
-
-			}
-			li a.active {
-				background-color: blue;
-				color: pink;
-			}
-
-			li a:hover:not(.active)  {
-				background-color: beige;
-				color: green;
-			}
-
-
-		</style>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Homepage</title>
+		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-		<nav>
-			<ul>
-				<li><a href="index.html">
-					<img src="images/passport2.jpg" alt="golden's avatar" />
-					<span>Golden Ogbeka</span></a
-				></li>
-			
-			
-				<li><a href="about.html">About</a></li>
-			
+		<nav class="navigation">
+			<a href="index.html">
+				<img
+					src="images/brand.png"
+					alt="Logo"
+					style="width: 37px; height: 37px; object-fit: cover; border-radius: 50%"
+				/>
+			</a>
 
-			
-				<li><a href="contact.html">Contact</a></li>
-			
-
-				<li><a href="">Portfolio</a></li>
-				
-			</ul>
-			
-			
+			<div class="link-container">
+				<a href="about.html" class="nav-link hidden-in-mobile">About</a>
+				<a href="contact.html" class="nav-link">Contact</a>
+				<a
+					href="https://github.com/Golden-Ogbeka"
+					target="_blank"
+					class="nav-link hidden-in-mobile"
+					>Portfolio</a
+				>
+			</div>
 		</nav>
-		<h1>Home page</h1>
-			<section>
-				<h1> ASUU STRIKE UPDATE: STUDENT'S OPINION</h1>
-
+		<main style="min-height: 100vh">
+			<section class="hero">
+				<div>
+					<h1>I’m Johnson Jacobs</h1>
+					<p>
+						I’m a UI Designer from Orlando, Florida. I use tools like Figma, Adobe XD and
+						Invision. My goal is to help people create an outstanding solution that can benefit
+						the human race
+					</p>
+				</div>
+				<img src="images/brand.png" alt="Logo" style="max-width: 100%" />
 			</section>
-			<section>
-				<img src="C:\Users\user\Desktop\CDI-Project\images\aSSUUUUUUU.jpg" alt="ASUU" width="300"/>
+			<section
+				style="
+					padding-top: 65px;
+					padding-bottom: 128px;
+					background-color: white;
+					padding-inline: 6.38vw;
+					flex-direction: column;
+					display: flex;
+					align-items: center;
+				"
+			>
+				<h2>Chat with me</h2>
+				<div style="display: flex; gap: 126px; flex-wrap: wrap">
+					<img src="images/facebook.png" alt="Facebook" />
+					<img src="images/whatsapp.png" alt="Whatsapp" />
+					<img src="images/youtube.png" alt="Youtube" />
+				</div>
 			</section>
-
-			<section>
-				<h1>What do students think?</h1>
-				<p>Though the Academic staff union of universities have called off the 8 month long strike, nigerian students are unhappy about the development</p>
-					
-			</section>
-			<section>
-				 <video src="Nigerian Food.mp4" width="400" controls></video>
-			</section>
-	
-
-		<footer>
-			&copy;2022 Ogbeka Golden
-
-			<a href="https://www.linkedin.com/in/goldenogbeka/" target="_blank">LinkedIn </a>
+		</main>
+		<footer class="navigation">
+			<span>All rights reserved</span>
+			<a href="https://www.linkedin.com/in/goldenogbeka/" class="nav-link" target="_blank"
+				>Linkedin</a
+			>
 		</footer>
 	</body>
 </html>

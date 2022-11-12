@@ -4,31 +4,57 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Contact Us</title>
+		<title>Contact</title>
+		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-		<nav>
+		<nav class="navigation">
 			<a href="index.html">
-				<img src="images/passport2.jpg" alt="golden's avatar" />
-				<span>Golden Ogbeka</span></a
-			>
-
-			<a href="about.html">About</a>
-			<a href="contact.html">Contact</a>
-			<a href="">Portfolio</a>
+				<img
+					src="images/brand.png"
+					alt="Logo"
+					style="width: 37px; height: 37px; object-fit: cover; border-radius: 50%"
+				/>
+			</a>
+			<div class="link-container">
+				<a href="about.html" class="nav-link hidden-in-mobile">About</a>
+				<a href="contact.html" class="nav-link">Contact</a>
+				<a
+					href="https://github.com/Golden-Ogbeka"
+					target="_blank"
+					class="nav-link hidden-in-mobile"
+					>Portfolio</a
+				>
+			</div>
 		</nav>
-		<h1>Contact Page</h1>
-
-		<form>
-			<label for="nameInput">Full name</label>
-			<input id="nameInput" />
-
-			<label for="email">Email</label>
-			<input id="email" />
-
-			<label for="Phone Number">Phone Number</label>
-			<input id="Phone Number" />
-			<button>Submit</button>
-		</form>
+		<main style="background-color: #272727; min-height: 100vh" class="contact-form">
+			<h1>How can I help?</h1>
+			<p style="margin-bottom: 100px">Send a message</p>
+			<form onsubmit="alert('THank you') ">
+				<div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 40px">
+					<label for="fullName">Full name</label>
+					<input type="text" id="fullName" placeholder="Enter your full name" />
+				</div>
+				<div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 40px">
+					<label for="email">Email</label>
+					<input type="email" id="email" placeholder="Enter your email" />
+				</div>
+				<div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 40px">
+					<label for="phonenumber">Phone number</label>
+					<input type="tel" id="phonenumber" placeholder="Enter your phone number" />
+				</div>
+				<div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 40px">
+					<label for="message">Message</label>
+					<textarea id="message" placeholder="Enter your message" rows="6"></textarea>
+				</div>
+				<button class="form-button" type="submit">Send Message</button>
+			</form>
+		</main>
+		<footer class="navigation">
+			<span>All rights reserved</span>
+			<a href="https://www.linkedin.com/in/goldenogbeka/" class="nav-link" target="_blank"
+				>Linkedin</a
+			>
+		</footer>
 	</body>
 </html>

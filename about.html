@@ -1,27 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<title>Golden Ogbeka</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>About</title>
+		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-		<nav>
+		<nav class="navigation">
 			<a href="index.html">
-				<img src="images/passport2.jpg" alt="golden's avatar" />
-				<span>Golden Ogbeka</span></a
-			>
-
-			<a href="about.html">About</a>
-			<a href="contact.html">Contact</a>
-			<a href="">Portfolio</a>
+				<img
+					src="images/brand.png"
+					alt="Logo"
+					style="width: 37px; height: 37px; object-fit: cover; border-radius: 50%"
+				/>
+			</a>
+			<div class="link-container">
+				<a href="about.html" class="nav-link hidden-in-mobile">About</a>
+				<a href="contact.html" class="nav-link">Contact</a>
+				<a
+					href="https://github.com/Golden-Ogbeka"
+					target="_blank"
+					class="nav-link hidden-in-mobile"
+					>Portfolio</a
+				>
+			</div>
 		</nav>
-		<h1>About page</h1>
-		<h2>Qualifications</h2>
-		<ul>
-			<li>Peaklane</li>
-			<li>Babcock</li>
-			<li>Caleb</li>
-			<li>Unilag</li>
-			<li>Covenant University</li>
-		</ul>
+		<main style="min-height: 100vh">
+			<section
+				style="color: white; background: #272727; padding-inline: 6.4vw; padding-block: 143px"
+			>
+				<h1>Qualifications</h1>
+				<ul>
+					<li>Studied in University of Florida</li>
+					<li>Had a First Class</li>
+					<li>Worked for 5 years</li>
+					<li>Now owns a company</li>
+				</ul>
+			</section>
+			<section
+				style="color: #272727; background: #fff; padding-inline: 6.4vw; padding-block: 143px"
+			>
+				<h1>Education</h1>
+				<ul>
+					<li>Studied Computer Science</li>
+					<li>Did Human Computer Interface for Masters</li>
+					<li>Has a PhD. in Computer Philosophy</li>
+				</ul>
+			</section>
+		</main>
+		<footer class="navigation">
+			<span>All rights reserved</span>
+			<a href="https://www.linkedin.com/in/goldenogbeka/" class="nav-link" target="_blank"
+				>Linkedin</a
+			>
+		</footer>
 	</body>
 </html>
